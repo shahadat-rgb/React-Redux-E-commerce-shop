@@ -17,7 +17,7 @@ const CartReducer = (state= initState,action) => {
              const tQuantities = state.totalQuantities + quantity;
              product.quantity = quantity;
              return{
-                ...state, products:[...state.products,product],totalPrice : tPrice , totalQuantities:tQuantities   }
+                ...state, products:[...state.products,product],totalPrice : tPrice , totalQuantities:tQuantities}
             }
             case "INC":
       findPro = state.products.find((pd) => pd.id === action.payload);
@@ -37,7 +37,7 @@ const CartReducer = (state= initState,action) => {
       state.products[index] = findPro;
       return {
         ...state,
-        totalPrice: state.totalPrice + findPro.discoutPrice,
+        totalPrice: state.totalPrice - findPro.discoutPrice,
         totalQuantities: state.totalQuantities - 1,
       };
         }
