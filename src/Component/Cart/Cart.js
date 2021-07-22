@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import currencyFormatter from "currency-formatter";
 import { BsDash, BsPlus, BsFillTrashFill } from "react-icons/bs";
 import './Cart.scss'
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { products,totalPrice,totalQuantities } = useSelector((state) => state.CartReducer);
@@ -96,14 +97,17 @@ const Cart = () => {
                 total Price : <span className="ml-5">  {currencyFormatter.format(totalPrice, {code: "USD",})} </span>
               </h3>
                 <div className="text-center mt-3">
+                  
+                  <Link to='/checkout'>
                   <button className="bg-red-300 px-7 py-4 text-white text-lg w-full">Checkout</button>
+                  </Link>
                 </div>
             </div>
           </div>
         </>
-      ) : (
-        "you have cart is empty"
-      )}
+      ) : 
+         <h2 className='text-center text-red-500 mt-32'>you have cart is empty</h2>
+      }
     </div>
   );
 };

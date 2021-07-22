@@ -45,12 +45,19 @@ const CartReducer = (state= initState,action) => {
           return state
         }
 case 'REMOVE':
-  findPro = state.products.find((pd) => pd.id === action.payload);
-  const filtered=state.products.filter(pd=>pd.id !== action.payload)
+
+  const confirmSms = window.confirm("Do you want to delete this product ? ")
+  if (confirmSms) {
+    findPro = state.products.find((pd) => pd.id === action.payload);
+    const filtered =state.products.filter(pd=>pd.id !== action.payload)
+  
   return{
     ...state, products: filtered, 
     totalPrice: state.totalPrice - findPro.discoutPrice* findPro.quantity, totalQuantities: state.totalQuantities - findPro.quantity
   }
+} else{
+    return state;
+}
         default: return state;
     }
 

@@ -10,6 +10,7 @@ import Navbar from './Component/Navbar/Navbar';
 import { Provider } from 'react-redux';
 import store from './Redux/Store/Store';
 import PdDetails from './Component/PdDetails/PdDetails';
+import Checkout from './Component/Checkout/Checkout';
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
           </Route>
           <Route path='/cart'>
               <Cart></Cart>
+          </Route>
+
+          <Route path='/checkout'>
+             <Checkout></Checkout>
           </Route>
 
        </Switch>
