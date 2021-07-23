@@ -22,6 +22,9 @@
 
 ### Home page :
 
+![home-page](https://user-images.githubusercontent.com/67516342/126743138-f4bd2fa0-8088-4d28-aab0-edef31bf044b.png)
+
+
 ### Product Details Section :
 
 ![pd-details](https://user-images.githubusercontent.com/67516342/126740957-b235aa1f-9545-482f-898b-85b6ccadd40d.png)
@@ -32,8 +35,13 @@
 
 ### User Details Section :
 
-![pd-details](https://user-images.githubusercontent.com/67516342/126740957-b235aa1f-9545-482f-898b-85b6ccadd40d.png)
+![user-details](https://user-images.githubusercontent.com/67516342/126741957-84b78b5f-4f8c-4c76-b0bf-21a141ff7637.png)
 
-### Checkout Section :
+### Success Message:
 
-![order-item](https://user-images.githubusercontent.com/67516342/126741095-f727f4e8-f6b1-4cac-9433-60eca4b7a429.png)
+![delevery-info](https://user-images.githubusercontent.com/67516342/126742086-b8e86836-e226-4435-a3d1-d2128d178620.png)
+
+
+
+
+
